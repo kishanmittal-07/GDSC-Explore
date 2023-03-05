@@ -1,0 +1,400 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    height: 65px;
+    width: 100%;
+    box-shadow: 0 5px 5px -3px rgb(0, 0, 0, 0.3);
+}
+
+#navbar ul {
+    display: flex;
+    padding-left: 300px;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul a {
+    display: block;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0px 8px;
+    padding: 1px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    letter-spacing: 0.9px;
+}
+
+#navbar ul a:hover {
+    color: rgb(118, 118, 248);
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-name {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    padding: 30px 15px;
+}
+
+.logo img {
+    height: 75px;
+    width: 80px;
+    cursor: pointer;
+    margin-left: 35px;
+}
+
+/* HOME SECTION  */
+.main {
+    display: flex;
+    margin: 35px 35px;
+    padding: 40px 40px;
+}
+
+.heading2 {
+    color: rgb(57, 57, 226, 0.65);
+}
+
+#btn {
+    border: 2px solid rgb(50, 50, 185);
+    border-radius: 5px;
+    background-color: rgb(57, 57, 226);
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+
+#btn1 {
+    border: 2px solid rgb(57, 57, 226);
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: white;
+    color: rgb(50, 50, 185);
+    cursor: pointer;
+}
+
+#btn:hover {
+    box-shadow: 0 5px 5px -3px rgb(0, 0, 0, 0.1);
+}
+
+#btn1:hover {
+    background-color: rgb(57, 57, 226);
+    color: white;
+}
+
+/* SPAN SECTION  */
+.text-box {
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+}
+
+.fixed-text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.animated-text {
+
+    display: inline-block;
+    height: 113px;
+    overflow: hidden;
+
+}
+
+.animated-text span {
+
+    position: relative;
+    color: rgb(51, 188, 92);
+    display: block;
+    text-align: left;
+}
+
+.animated-text span:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-left: 5px solid #128c37;
+    right: -2px;
+    ;
+    background-color: rgb(243, 243, 243);
+    animation: 3s textType;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(10);
+    animation-fill-mode: backwards;
+}
+
+@keyframes textType {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+/* EVENT SECTION  */
+.events {
+    display: flex;
+    margin: 20px 40px;
+    padding: 30px 0px;
+    justify-content: space-around;
+}
+
+.events img {
+    width: 320px;
+    height: 350px;
+}
+
+.profile {
+    border: 2px solid grey;
+    border-radius: 10px;
+    height: 620px;
+    width: 407px;
+    margin: 0px 15px;
+    padding: 20px 20px;
+}
+
+.eventDay {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 10px 100px;
+    display: inline-flex;
+}
+
+.Day {
+    cursor: pointer;
+    padding-right: 30px;
+}
+
+.Day:hover {
+    color: red;
+}
+
+.Open {
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: blue;
+    margin-top: 20px;
+    display: flex;
+}
+
+.Open img {
+    padding-left: 10px;
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+/* TEAM SECTION  */
+.team {
+    display: flex;
+}
+
+.teamSection {
+    padding: 50px 50px;
+    background-color: rgb(243, 243, 243);
+}
+
+.cards img {
+    margin: 30px 30px;
+    padding: 20px 20px;
+    height: 100px;
+    width: 200px;
+}
+
+/* SPEAKER SECTION  */
+.speaker {
+    display: flex;
+    justify-content: center;
+}
+
+.speakers {
+    border: 2px solid rgb(193, 193, 193);
+    border-radius: 10px;
+    height: 275px;
+    width: 170px;
+    margin: 120px 30px 80px 30px;
+    padding: 20px 20px;
+    box-shadow: 0 5px 5px -3px rgb(0, 0, 0, 0.5);
+}
+
+.speakers h1 {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.speaker p {
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 550;
+}
+
+.speakerSection {
+    padding: 50px 50px;
+    background-color: white;
+}
+
+.speakers img {
+    margin: 30px 30px 0px 30px;
+    padding: 15px 20px;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
+/* EXECUTE SECTION  */
+.execute {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    background-color: white;
+    border: 2px solid rgb(193, 193, 193);
+    border-radius: 10px;
+    height: 180px;
+    width: 130px;
+    margin: 50px 30px 80px 30px;
+    padding: 20px 20px;
+    box-shadow: 0 5px 5px -3px rgb(0, 0, 0, 0.5);
+}
+.icons p{
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.execute img {
+    padding: 15px 15px;
+    height: 70px;
+    width: 70px;
+}
+
+/* SPONSER SECTION  */
+.sponsers {
+    background-color: rgb(243, 243, 243);
+    padding: 50px 40px;
+    cursor: pointer;
+}
+
+.sponsers img {
+    padding: 50px 500px;
+}
+
+.sponsers a {
+    color: black;
+    text-decoration: none;
+}
+
+/* FAQ SECTION  */
+.FAQs {
+    padding: 120px 120px;
+}
+
+.ques {
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    opacity: 0.5;
+    background-color: rgb(224, 224, 224);
+    margin: 10px;
+    padding: 25px 25px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.ques:hover {
+    opacity: 1;
+}
+
+/* CONTACT SECTION  */
+.contact {
+    padding: 50px 50px;
+    background-color: rgb(243, 243, 243);
+}
+
+.contact a {
+    text-decoration: none;
+}
+
+.contact img {
+    height: 180px;
+    width: 180px;
+    margin: 50px 100px 0px 0px;
+    padding: 50px 210px 0px 0px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 50px;
+    padding: 40px 100px;
+}
+
+.form input {
+    display: block;
+    width: 450px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.form textarea {
+    display: block;
+    width: 450px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.contact button {
+    border: 2px solid rgb(50, 50, 185);
+    border-radius: 5px;
+    background-color: rgb(57, 57, 226);
+    padding: 7px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+
+}
+
+.contact button:hover {
+    box-shadow: 0 5px 5px -3px rgba(5, 5, 5, 0.3);
+}
